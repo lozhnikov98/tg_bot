@@ -10,13 +10,12 @@ from aiogram.filters import CommandStart
 from keyboard import *
 
 
-
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 
 @dp.message(CommandStart())
-async def start_handler(message: Message):
+async def cmd_start(message: Message):
     await message.answer(text=f"Привет, {message.from_user.first_name}! Выбери :", reply_markup=builder.as_markup())
     await message.answer(f"Привет, {message.from_user.first_name}! Выбери действие:", reply_markup=keyboard)
 
