@@ -4,14 +4,14 @@ from callbacks import *
 from name_buttons import *
 
 reply_kb = [
-    [
-        types.KeyboardButton(text=reply_button_text),
-        types.KeyboardButton(text=reply_button_photo),
-    ],
-    [
-        types.KeyboardButton(text=reply_button_video),
-        types.KeyboardButton(text=reply_button_pdf),
-    ],
+    # [
+    #     types.KeyboardButton(text=reply_button_text),
+    #     types.KeyboardButton(text=reply_button_photo),
+    # ],
+    # [
+    #     types.KeyboardButton(text=reply_button_video),
+    #     types.KeyboardButton(text=reply_button_pdf),
+    # ],
     [
         types.KeyboardButton(text="/start"), #добавил /start что не писать каждый раз
     ],
